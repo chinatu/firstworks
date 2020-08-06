@@ -1,0 +1,36 @@
+{%extends "layout.html"%}
+{%block content%}
+		<article class="main">
+			<h1 class="page-heading">Contact</h1>
+			<div id="form">
+				<form action="" method="POST">
+					
+					<p><label for="name">Name:</label>
+					<input type="text" name="name" placeholder="Your name" required>	
+					</p>
+
+					<p>
+					<label for="email">Email:</label>
+					<input type="text" name="email" placeholder="" required>
+					</p>
+
+					<p>
+					<label for="subject">Subject:</label>
+					<input type="text" name="subject" required>
+					</p>
+
+					<p>
+					<textarea id="message" type="text" name="message" cols="30" row="10"></textarea></p>
+					
+					<p>
+					<input id="submit" type="submit" name="submit" value="Send Message">
+					</p>
+
+				</form>
+
+
+
+			</div>	
+
+		</article>
+{%endblock%}

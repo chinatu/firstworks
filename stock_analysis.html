@@ -1,0 +1,11 @@
+{%extends "layout.html"%}
+{%block content%}
+<script type="text/javascript" src={{cdn_js | safe}} ></script>
+<h3>Stock Analysis for Google Company From January 1st - August 1st</h3>
+<p>This stock analysis graph represents the google company stock price variations from 
+    January 1st to August 1st, highlighting its opening price and closin price on working 
+    days. </strong>This graph does not include weekends when the stock market is closed</strong>
+</p>
+{{script1 | safe}}
+{{div1 | safe}}
+{%endblock%}

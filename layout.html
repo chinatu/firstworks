@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home Page</title>
+		 <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+		<!--	<script type="js" src="../JS/script.js"></script>-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a class="link-title" href="">Chinatu Foundation</a>
+			</header>
+
+			<nav class="menu">
+				<a href="{{ url_for('home') }}">Home</a> &nbsp; &nbsp; &nbsp;
+				<a href="{{ url_for('about') }}">About Us</a> &nbsp; &nbsp; &nbsp;
+				<a href="{{ url_for('contact') }}">Contact Us</a>&nbsp; &nbsp; &nbsp;
+				<a href="{{ url_for('stock_analysis') }}">Stock Analysis</a>
+			</nav>
+
+			<aside class="sidebar">
+
+				<h1>Side Bar</h1>
+
+			</aside>
+
+    	<div class="container_body">
+			{%block content%}
+			{%endblock%}
+		</div>
+    	<footer>
+			&copy; 2030 Chinatu Foundation&nbsp;<span class="seperator">|</span> Design by <a href="www.chintuenyinnaya.com"> Chinatu Dev</a>
+    	</footer>
+		</div>
+	</body>
+</html>
